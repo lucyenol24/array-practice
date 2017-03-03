@@ -40,18 +40,41 @@
 </header>
 
 <section class="container">
-  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
+  <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball" onclick="clicker()">
 
   <div>
-    <form>
+    <form onSubmit="magicAnswer()" name="questionForm">
       <label> What's Your Question?
-        <textarea name="magiceight"></textarea>
+        <input type="text" name="question">
       </label>
-      
-      <label>
-        <input type="submit" value="Submit" name="submit">
-      </label>
+      <input type="submit" value="Ask!">
     </form>
+    
+    <form onSubmit="insertAnswer()" name="answerForm">
+      <label> What answer would you like to get sometimes?
+        <input type="text" name="answer">
+      </label>
+      <input type="submit" value="Yeah!">
+    </form>
+    
+    <form onSubmit="removeAnswer()" name="removalForm">
+      What answer would you like to remove?
+      <label> perhaps
+        <input type="radio" name="remove" value="perhaps">
+      </label>
+      <label> yaaaas
+        <input type="radio" name="remove" value="yaaaas">
+      </label>
+      <label> nah
+        <input type="radio" name="remove" value="nah">
+      </label>
+      <label> look a squirrel!
+        <input type="radio" name="remove" value="look a squirrel!">
+      </label>
+      <input type="submit" value="Dope!">
+    </form>
+
+    
   </div>
 </section>
 <script type="text/javascript" src="scripts.js"></script>
