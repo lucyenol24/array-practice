@@ -9,10 +9,17 @@ var fortunes = ["perhaps", "yaaaas", "nah", "look a squirrel!"]
   3. console log something conversational to user, like "Oh, you want to know [question]? Well, I think... [answer]"
 */
 
-function clicker() {
-  console.log("clicked!!!!!");
-}
+var cart = [{name: "yes"}, {name: "no"}]
 
+  
+function clicker(fortune) {
+  
+  var i = cart.findIndex(function(el)  {
+    return el.name.toLowerCase() == fortune })
+  }
+}
+//first part of hw with onclick. (ADD REMOVE section) if i >=0, that means the element is in the array already, so splice to get it out of the array. if its not in the array, push it into the array. 
+//sort: FOR THE NAME do the lowercase etc stuff . console log the results of the sort.
 
 
 function removeAnswer() {
