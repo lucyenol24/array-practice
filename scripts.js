@@ -7,3 +7,5 @@ alert("Let's get to work! ")
   2. randomly select an element from the array of answers
   3. console log something conversational to user, like "Oh, you want to know [question]? Well, I think... [answer]"
 */
+
+var a = ["perhaps", "yaaaas", "nah", "pineapple", "look a squirrel!"]
